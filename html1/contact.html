@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Description" content="Fullstack Web Dev School MR SOFT" />
+    <meta name="keyword" content="Education, learning, coding school, web dev" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/asset/css/style.css">
+    <title>Home Page</title>
+    <style>
+
+    </style>
+</head>
+<script>
+    //alert("welcome to my first Home page ")
+</script>
+<noscript>this websites does not support javascript</noscript>
+
+<body>
+    <header>
+        <a href="index.html"><img src="../asset/images/favicon.ico" alt="logo"></a>
+        <nav> <a href="#">Home</a> <a href="about.html">About</a> <a href="services.html">Services</a> <a
+                href="#">Contact</a></nav>
+
+    </header>
+
+    <h1>Contact Us</h1>
+
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus nostrum accusantium, provident nam esse non
+        consequuntur possimus explicabo asperiores, enim voluptatibus sit incidunt expedita dolorem obcaecati itaque
+        sequi? Voluptatibus, accusantium.</p>
+    <main>
+        <section>
+            <div>
+                <form action="signup.html" method="post">
+                    <label for="first_name">first name</label>
+                    <input type="text" name="first_name" id="first_name" placeholder="Enter your name" tabindex="0"
+                        autofocus autocomplete="true" required pattern="[A-za-z]{9-0}">
+                    <label for="last_name">last name</label>
+                    <input type="text" name="last_name" id="last_name" placeholder="Enter your last name" tabindex="1"
+                        autofocus autocomplete="true" required>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" tabindex="2" autofocus
+                        autocomplete="true" required>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter your password" tabindex="3"
+                        autofocus autocomplete="true" minlength="6" maxlength="12" required>
+                    <label for="date">Date of Birth</label>
+                    <input type="datetime-local" name="date" id="date" tabindex="4" autofocus autocomplete="true"
+                        required>
+                    <label for="file">file</label>
+                    <input type="file" id="file" name="file" accept="/pdf">
+
+                    <label for="search">search</label>
+                    <input type="search" title="search" placeholder="search here" id="search" name="search">
+
+                    <fieldset>
+                        <legend>Gender</legend>
+                        <label for="male">male</label>
+                        <input type="radio" name="gender" id="male" value="male" />
+                        <label for="female">female</label>
+                        <input type="radio" name="gender" id="female" value="female" />
+                        <label for="other">others</label>
+                        <input type="radio" name="gender" id="other" value="other" />
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Options</legend>
+                        <label for="garri">garri</label>
+                        <input type="checkbox" id="garri" name="garri" />
+                        <label for="fufu">fufu</label>
+                        <input type="checkbox" id="fufu" name="fufu" />
+                        <label for="rice">rice</label>
+                        <input type="checkbox" id="rice" name="rice" />
+                        <label for="beans">beans</label>
+                        <input type="checkbox" id="beans" name="beans" />
+                    </fieldset>
+
+                    <select name="selector" title="selector">
+                        <option value="" selected disabled>select</option>
+                        <option value="kiwi">kiwi</option>
+                        <option value="pawpaw">pawpaw</option>
+                        <option value="orange">orange</option>
+                        <option value="apple">apple</option>
+                    </select>
+                    <hr>
+
+                    <label for="brower">Browsers</label>
+                    <input list="browers" name="brower" id="brower"/>
+                    <datalist id="browers">
+                        <option value="edge"></option>
+                        <option value="firefox"></option>
+                        <option value="chrome"></option>
+                        <option value="brave"></option>
+                        <option value="opera"></option>
+                        <option value="safari"></option>
+                    </datalist>
+                    
+                    <label for="message">message</label>
+                    <textarea name="msg" placeholder="leave us a message" rows="10" cols="10" required></textarea>
+                    <button type="reset">reset</button>
+                    <button type="submit" name="submit">send</button>
+
+                </form>
+        </section>
+    </main>
+
+
+</body>
+
+</html>

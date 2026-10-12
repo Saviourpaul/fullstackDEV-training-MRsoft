@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: rgb(122, 14, 205);
+    color: azure;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: aquamarine;
+}
+
+nav {
+    padding: 8px;
+    
+}
+
+nav ul {
+    width: min(1100px, 100%);
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+.sec{
+    padding:1rem;
+    margin: 1rem;
+    border: 1px solid;
+}
+
+.sec > div {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.sec > div > div > div > img {
+    width: 100%;
+   max-width: 350px;
+
+}
+
+
+.sec > div > div > div > p {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 9px 9px 0 0;
+    overflow: hidden;
+    padding: 1rem;
+  
+}
+
+.sec > div > div  {
+    overflow: hidden;
+    border-radius: 5px 5px;
+    overflow: hidden;
+}
+
+.sec > div > div > div {
+   
+    box-shadow: 1px 2px 5px 1px rgb(159, 192, 192);
+
+}

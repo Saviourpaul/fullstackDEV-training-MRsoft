@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Start a conversation with Simplify Solutions about your business goals, digital project, or next challenge.">
+    <meta name="theme-color" content="#f8f8f4">
+    <title>Contact | Simplify Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/main.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="site-nav page-shell" aria-label="Main navigation">
+            <a class="brand" href="index.html" aria-label="Simplify Solutions home"><span
+                    class="brand-mark">s</span><span class="brand-name">simplify<span>solutions</span></span></a>
+            <input class="menu-checkbox" type="checkbox" id="menu-toggle" aria-label="Toggle navigation menu"
+                aria-controls="primary-navigation">
+            <label class="menu-toggle" for="menu-toggle"><span></span><span></span></label>
+            <ul class="nav-links" id="primary-navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutUs.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a class="nav-contact is-current" href="contact.html" aria-current="page">Let’s talk
+                        <span>↗</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content">
+        <section class="contact-page page-shell">
+            <div class="contact-intro">
+                <p class="eyebrow"><span class="eyebrow-dot"></span> Start a conversation</p>
+                <h1>Tell us what’s<br><span>on your mind.</span></h1>
+                <p>Have a business challenge, a digital project, or simply a question? Share a little about it and we’ll
+                    help you think through the next step.</p>
+                <div class="contact-note"><span class="contact-note-mark">↗</span>
+                    <div>
+                        <h2>We’d love to hear from you</h2>
+                        <p>Share a little about what you’re working on. Your message will be prepared for email so we
+                            can start with what matters to you.</p>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form" id="contact-form">
+                <p class="form-heading">A little about your project</p>
+                <div class="form-field"><label for="contact-name">Your name</label><input id="contact-name" name="name"
+                        type="text" autocomplete="name" required></div>
+                <div class="form-field"><label for="contact-email">Your email</label><input id="contact-email"
+                        name="email" type="email" autocomplete="email" required></div>
+                <div class="form-field"><label for="contact-interest">What would you like help with?</label><select
+                        id="contact-interest" name="interest" required>
+                        <option value="" disabled selected>Select a service</option>
+                        <option>Business strategy</option>
+                        <option>Web development</option>
+                        <option>Digital growth</option>
+                        <option>Something else</option>
+                    </select></div>
+                <div class="form-field"><label for="contact-message">Tell us a little more</label><textarea
+                        id="contact-message" name="message" rows="5" required></textarea></div>
+                <button class="button button-primary form-submit" type="submit">Prepare your message
+                    <span>↗</span></button>
+                <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+      
+    </main>
+    <footer class="site-footer">
+        <div class="page-shell footer-main">
+            <div class="footer-brand"><a class="brand brand-light" href="index.html"
+                    aria-label="Simplify Solutions home"><span class="brand-mark">s</span><span
+                        class="brand-name">simplify<span>solutions</span></span></a>
+                <p>Clear thinking for a business world that doesn’t stand still.</p>
+            </div>
+            <div class="footer-column">
+                <h2>Explore</h2><a href="index.html">Home</a><a href="AboutUs.html">About us</a><a
+                    href="services.html">Services</a>
+            </div>
+            <div class="footer-column">
+                <h2>Start here</h2><a href="contact.html">Contact</a><a href="services.html#business-strategy">Business
+                    strategy</a><a href="services.html#web-development">Web development</a>
+            </div>
+        </div>
+        <div class="page-shell footer-bottom">
+            <p>© <span data-current-year>2026</span> Simplify Solutions. All rights reserved.</p><a
+                href="#main-content">Back to top ↑</a>
+        </div>
+    </footer>
+</body>
+
+</html>

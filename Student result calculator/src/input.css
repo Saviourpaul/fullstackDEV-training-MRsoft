@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+#home {
+  min-height: 100svh;
+  grid-template-columns: minmax(0, 1fr);
+  justify-items: center;
+  padding: clamp(1.5rem, 5vw, 4rem);
+  background:
+    radial-gradient(ellipse at 15% 15%, rgb(191 219 254 / 55%), transparent 36rem),
+    radial-gradient(ellipse at 90% 85%, rgb(199 210 254 / 45%), transparent 32rem);
+}
+
+#home form {
+  width: min(100%, 30rem);
+  padding: clamp(1.5rem, 5vw, 2.75rem);
+  border: 1px solid rgb(226 232 240 / 85%);
+  border-radius: 1.5rem;
+  background: rgb(255 255 255 / 92%);
+  box-shadow: 0 24px 70px -24px rgb(30 64 175 / 30%);
+}
+
+.form-row {
+  display: grid;
+  gap: 1.125rem;
+}
+
+.form-row > div {
+  display: grid;
+}
+
+.form-row input {
+  width: 100%;
+  min-height: 3.5rem;
+  padding: 0.875rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.75rem;
+  outline: none;
+  background: #fff;
+  color: #0f172a;
+  font: inherit;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.form-row input::placeholder {
+  color: #64748b;
+}
+
+.form-row input:hover {
+  border-color: #94a3b8;
+}
+
+.form-row input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgb(37 99 235 / 14%);
+}
+
+#home form button {
+  width: 100%;
+  min-height: 3.5rem;
+  margin-top: 1.5rem;
+  padding: 0.875rem 1rem;
+  border: 0;
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 10px 20px -10px rgb(37 99 235 / 75%);
+  transition: filter 150ms ease, transform 150ms ease, box-shadow 150ms ease;
+}
+
+#home form button:hover {
+  filter: brightness(1.08);
+  box-shadow: 0 14px 24px -10px rgb(37 99 235 / 75%);
+  transform: translateY(-1px);
+}
+
+#home form button:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 3px;
+}
+
+#home form button:active {
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .form-row input,
+  #home form button {
+    transition: none;
+  }
+}

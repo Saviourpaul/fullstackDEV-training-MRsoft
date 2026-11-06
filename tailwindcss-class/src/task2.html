@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+  </head>
+  <body>
+    <h1>Javascript Task 2 </h1>
+
+    <script>
+      //shopping 1 
+      // // costs
+    const riceBagPrice = 25000;
+    const riceBagsCount = 3;
+    const cookingOilPrice = 8500;
+
+    //total spent
+    const totalRiceCost = riceBagPrice * riceBagsCount;
+    const totalSpent = totalRiceCost + cookingOilPrice;
+
+console.log(`Total amount spent: ${totalSpent.toLocaleString("en-NG", { style: "currency", currency: "NGN" })}`);
+
+//2 age calculation 
+    const fatherYear = 45;
+    const hisSonYear = 15;
+    const age = fatherYear - hisSonYear;
+
+    //how old will the father be in 10 years
+    const futureFatherAge = fatherYear + 10;
+
+    console.log(`Ages: ${age} years`);
+    console.log(`Father's age in 10 years: ${futureFatherAge} years`);
+
+
+    //3. school Examination 
+    const Scores = [75, 80, 65, 90, 85];
+    let totalScore = 0; for (const score of Scores) {totalScore += score;}
+    const averageScore = totalScore / Scores.length;
+    console.log(`Total Score: ${totalScore}`);
+    console.log(`Average Score: ${averageScore}`);
+
+
+    //4. Transportation 
+    const busTravel = 360; // in meters
+
+    //calculate it average speed in km/h
+    const busSpeed = (busTravel / 1000) / (1/3600); 
+    console.log(`Average Speed: ${busSpeed.toFixed(2)} km/h`);
+
+
+    //5. savings
+const weeklySavings = 5000;
+const weeks = 12;
+const amountSpent = 15000;
+
+//5. Calculations
+const totalSavings = weeklySavings * weeks;
+const remainingBalance = totalSavings - amountSpent;
+const nairaFormat = { style: "currency", currency: "NGN", maximumFractionDigits: 0 };
+console.log(`Total saved altogether: ${totalSavings.toLocaleString("en-NG", nairaFormat)}`);
+console.log(`Amount remaining: ${remainingBalance.toLocaleString("en-NG", nairaFormat)}`);
+
+//6. Rectangle 
+const metersLong = 25;
+const metersWide = 15;
+const area = metersLong * metersWide;
+const perimeter = 2 * (metersLong + metersWide);
+console.log(`Area: ${area} square meters`);
+console.log(`Perimeter: ${perimeter} meters`);
+
+
+//7. profit and loss 
+const traderTelevisionCost = 180000;
+const traderSellingPrice = 225000;
+const profit = traderSellingPrice - traderTelevisionCost;
+const percentageProfit = (profit / traderTelevisionCost) * 100;
+console.log(`Profit: ${profit.toLocaleString("en-NG", { style: "currency", currency: "NGN" })}`);
+console.log(`Percentage Profit: ${percentageProfit.toFixed(2)}%`);
+
+
+//8. Electricity
+const houseBulbs = 5;
+const bulbWattage = 20; // in watts
+const TotalPowerConsumption = houseBulbs * bulbWattage; 
+console.log(`Total Power Consumption: ${TotalPowerConsumption.toFixed(2)} kWh`);
+
+
+//9. sharing money
+const manSheared = 120000;
+const childrenShares = 4;
+const sharePerChild = manSheared / childrenShares;
+console.log(`Each child receives: ${sharePerChild.toLocaleString("en-NG", { style: "currency", currency: "NGN" })}`);
+
+
+//10. Discount
+const schoolBagCost = 20000;
+const discountPercentage = 15;
+const discountAmount = (discountPercentage / 100) * schoolBagCost;
+const finalPrice = schoolBagCost - discountAmount;
+console.log(`Final Price after ${discountPercentage}% discount: ${finalPrice.toLocaleString("en-NG", { style: "currency", currency: "NGN" })}`);
+
+</script>
+
+  </body>
+</html>

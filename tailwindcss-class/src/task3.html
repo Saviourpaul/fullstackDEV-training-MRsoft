@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+  </head>
+  <body>
+    <h1>Javascript Task 3 </h1>
+
+    <script>
+
+        //1. for loop for even numbers
+        for (let i = 0; i <= 20; i += 2) {
+            console.log(i);
+        }
+        //2. while loop 
+       let  countDown = 15; 
+        while (countDown > 0) {
+            console.log(countDown);
+            countDown--;
+        }
+        console.log('Happy New Year!');
+
+
+        //3. Do while loop (print age it by 1 until it reaches 18)
+        const studentAge = 12;
+        let age = 0;
+        do {
+            console.log(`Student Age: ${age}`);
+            age++;
+        } while (age < 19);
+
+        //4. array and for loop 
+        const footballPlayers = ['John', 'Emma', 'Austin', 'Liam', 'James', 'Oliver', 'Noah', 'Elijah'];
+        for (let i = 0; i < footballPlayers.length; i++) {
+            console.log(`playerName: ${footballPlayers[i]}`);
+        }
+
+        //5 break and continue
+        const numbers = [10, 15, 20, 25, 30, 35, 40, 45, 50];
+       //use break to stop the loop when it reaches 40 and use continue to skip even numbers
+        for (let i = 0; i < numbers.length; i++) {
+            if (numbers[i] === 40) {
+                console.log('Breaking the loop at 40');
+                break;
+            }
+            if (numbers[i] % 2 === 0) {
+                console.log(`Skipping even number: ${numbers[i]}`);
+                continue;
+            }
+            console.log(`Number: ${numbers[i]}`);
+        }
+       
+        
+
+
+
+    </script>
+
+  </body>
+</html>
